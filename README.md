@@ -1,18 +1,25 @@
 # Employee Salary Calculation Script
 
-Скрипт для генерации отчётов по зарплатам сотрудников на основе CSV-файлов. Поддерживает различные форматы входных данных и позволяет легко добавлять новые типы отчётов.
+Скрипт для генерации отчётов по зарплатам сотрудников на основе CSV-файлов. Поддерживает различные форматы входных данных (`hourly_rate, rate, salary`) и позволяет легко добавлять новые типы отчётов.
 
 ## Установка
 
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/Spir1N/TestTask.git
-   cd employee-reports
+   cd TestTask
    ```
 
-2. Установите зависимости для тестов:
+2. Создайте виртуальное окружение:
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate       # Windows (cmd)
+    source venv/bin/activate    # Linux/macOS или Window (PowerShell)
+    ```
+
+3. Установите зависимости:
    ```bash
-   pip install pytest
+   pip install -r requirements.txt
    ```
 
 ## Использование
